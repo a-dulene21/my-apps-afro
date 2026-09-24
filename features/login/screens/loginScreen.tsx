@@ -4,10 +4,11 @@ import { View } from 'react-native';
 import { Button, Text, TextInput } from 'react-native-paper';
 import { stylesLogin } from '../styles/loginStyles';
 import { loginServices } from '../services/loginServices';
-import AppInput from '@/features/components/Input/AppInput';
 import { Link } from 'expo-router';
-import { spacing, typography } from '@/constants';
-import AppButton from '@/features/components/Button/AppButton';
+
+import { spacing, typography } from '../../../constants';
+import AppInput from '../../../utilitys/Input/AppInput';
+import AppButton from '../../../utilitys/Button/AppButton';
 
 
 export default function LoginScreen() {
@@ -72,7 +73,7 @@ export default function LoginScreen() {
 >
 
 
-{/* <Link
+<Link
   href="/registerScreen"
   style={{
     fontSize: typography.bodySmallSize,
@@ -88,7 +89,7 @@ export default function LoginScreen() {
   }}
 >
   Passwort vergessen?
-</Link> */}
+</Link>
 
 
 </View>

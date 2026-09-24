@@ -1,7 +1,9 @@
-import { Text, View } from "@/components/Themed";
-import AppInput from "@/features/components/Input/AppInput";
+
+import AppButton from "../../../utilitys/Button/AppButton";
+import AppInput from "../../../utilitys/Input/AppInput";
 import { stylesLogin } from "../styles/loginStyles";
-import AppButton from "@/features/components/Button/AppButton";
+import { StyleSheet, Text, View } from 'react-native';
+
 
 export default function ForgotPasswordScreen() {
     function handleRegister(): void {

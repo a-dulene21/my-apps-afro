@@ -4,8 +4,9 @@ import { View } from 'react-native';
 import { Text } from 'react-native-paper';
 
 import { stylesLogin } from '../styles/loginStyles';
-import AppInput from '@/features/components/Input/AppInput';
-import AppButton from '@/features/components/Button/AppButton';
+import AppInput from '../../../utilitys/Input/AppInput';
+import AppButton from '../../../utilitys/Button/AppButton';
+
 
 export default function RegisterScreen() {
   const [firstName, setFirstName] = useState('');
