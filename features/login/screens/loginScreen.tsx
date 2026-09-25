@@ -6,7 +6,7 @@ import { stylesLogin } from '../styles/loginStyles';
 import { loginServices } from '../services/loginServices';
 import { Link } from 'expo-router';
 
-import { spacing, typography } from '../../../constants';
+import { spacing, typography } from '../../../constants/constantIndex';
 import AppInput from '../../../utilitys/Input/AppInput';
 import AppButton from '../../../utilitys/Button/AppButton';
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from 'react-native-paper';
+import { useTheme } from '../../themes/themeProvider';
 
 type AppButtonProps = {
   children: React.ReactNode;
@@ -17,7 +18,10 @@ export default function AppButton({
   variant = 'primary',
   loading = false,
   disabled = false,
+  style,
 }: AppButtonProps) {
+  const { theme } = useTheme();
+
   const getMode = () => {
     switch (variant) {
       case 'outline':
@@ -31,14 +35,45 @@ export default function AppButton({
     }
   };
 
+  const getButtonColor = () => {
+    switch (variant) {
+      case 'secondary':
+        return theme.secondary;
+
+      case 'outline':
+        return 'transparent';
+
+      default:
+        return theme.primary;
+    }
+  };
+
+  const getTextColor = () => {
+    switch (variant) {
+      case 'secondary':
+        return theme.onSecondary;
+
+      case 'outline':
+        return theme.primary;
+
+      default:
+        return theme.onPrimary;
+    }
+  };
+
   return (
     <Button
       mode={getMode()}
+      buttonColor={getButtonColor()}
+      textColor={getTextColor()}
       onPress={onPress}
       loading={loading}
       disabled={disabled}
+      style={style}
     >
       {children}
     </Button>
   );
 }
+
+
