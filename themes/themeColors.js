@@ -7,48 +7,37 @@ export const themeColors = {
     mode: "light",
 
     // Fonds d'écran
-
     background: "#FBFBFD", // Blanc Albâtre / Nacre
-
     surface: "#FFFFFF", // Blanc pur pour les cartes
-
     surfaceSubtle: "#F3F4F6", // Zones secondaires
 
     // Couleurs Principales (Marque SHEFA)
-
     primary: "#0F2C59", // Bleu Saphir / Royal
-
     primaryHover: "#1D3557",
-
     onPrimary: "#FFFFFF", // Texte sur fond bleu
-
     secondary: "#D4AF37", // Or Champagne
-
     onSecondary: "#0B132B", // Texte sur fond or
-
     tertiary: "#E07A5F", // Ambre Chaud / Accents
-
     onTertiary: "#FFFFFF",
 
+    //Buttons & Interactions
+    primaryButton: "#0F2C59", // Bleu Saphir
+    secondaryButton: "#5c4e65", // Gris Foncé
+    tertaireButton: "#8D99AE", // Gris Clair
+
     // Typographie & Textes
-
     textPrimary: "#0B132B", // Bleu Nuit Profond
-
     textSecondary: "#4A5568", // Gris Moyen
-
     textMuted: "#9CA3AF", // Placeholders & icônes inactives
 
     // Bordures & Séparateurs
-
     border: "#E5E7EB",
 
     // États
-
     success: "#10B981", // PIN Validé / Profil Vérifié
-
     error: "#EF4444", // Annulations / Erreurs
-
     warning: "#F59E0B", // Étoiles de notation ★
+    info: "#3B82F6", // Notifications d'information
   },
 
   // --- PALETTE SOMBRE (Mode Nuit optionnel) ---
