@@ -1,17 +1,21 @@
 import { sizes, spacing } from "../../constants/constantIndex";
 import colors from "../../themes/colors";
-import { StyleSheet,} from 'react-native';
+import { StyleSheet, useWindowDimensions,} from 'react-native';
+
+
+//const { width } = useWindowDimensions();
 
 
 const cardStyles = StyleSheet.create({
+  
+
   cardContainer: {
     // backgroundColor: colors.surface,
     // borderColor: colors.border,
     borderWidth: 1,
-    borderRadius: sizes.borderRadiusLarge,
+    borderRadius: spacing.xSmall,
     overflow: 'hidden',
-    marginVertical: spacing.small,
-
+    marginVertical: 0,
     elevation: 3,
 
     shadowColor: '#000',
@@ -21,21 +25,18 @@ const cardStyles = StyleSheet.create({
     },
     shadowOpacity: 0.1,
     shadowRadius: 4,
+    
   },
 
   imageWrapper: {
     position: 'relative',
-    height: 350,
+    height: 180,
     width: '100%',
   },
 
-  image: {
-    width: '100%',
-    height: '90%',
-    resizeMode: 'cover',
-  },
+ 
 
-  priceBadge: {
+   priceBadge: {
     position: 'absolute',
     top: spacing.small,
     right: spacing.small,
@@ -48,26 +49,42 @@ const cardStyles = StyleSheet.create({
     // backgroundColor: colors.secondary,
   },
 
-  priceText: {
-    color: colors.white,
-    fontSize: 12,
-    fontWeight: 'bold',
-  },
-
   content: {
     padding: spacing.medium,
   },
 
-  title: {
-    // color: colors.text,
-    fontSize: 18,
-    fontWeight: 'bold',
+
+  cardImage: {
+    width: '100%',
+    height: '100%',
+    resizeMode: 'cover',
+  },
+  cardInfo: {
+    padding: 8,
+  },
+  cardTitle: {
+    fontSize: 16,
+    fontWeight: '700',
+    color: colors.textPrimary,
+    marginBottom: 6,
+    
+  },
+  cardPrice: {
+    fontSize: 13,
+    fontWeight: '700',
+    color: colors.accent,
     marginBottom: 4,
   },
+  cardDuration: {
+    fontSize: 12,
+    color: colors.textSecondary,
+  },
+
+ 
 
   providerText: {
-    // color: colors.textSecondary,
-    fontSize: 14,
+    color: colors.textSecondary,
+    fontSize: 12,
     marginBottom: spacing.medium,
   },
 
@@ -76,17 +93,26 @@ const cardStyles = StyleSheet.create({
   },
 
   button: {
-    // backgroundColor: colors.primary,
-    paddingVertical: 12,
-    borderRadius: 12,
-    alignItems: 'center',
+    color: colors.primary,
+    // paddingVertical: 4,
+    // borderRadius: 12,
+    // alignItems: 'center',
+    // marginTop:'auto'
+      width: 36,
+  height: 26,
+  borderRadius: 18,
+  alignItems: 'center',
+  justifyContent: 'center',
+  alignSelf: 'flex-end',
   },
 
   buttonText: {
     color: colors.white,
     fontSize: 14,
     fontWeight: 'bold',
+
   },
 });
+
 
 export default cardStyles;

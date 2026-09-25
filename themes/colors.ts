@@ -25,14 +25,18 @@ const colors = {
   lightGray: '#EEEEEE',
   gold: '#FFD700',
   red: '#D32F2F',
+  accent: '#D4AF37',       // Or Champagne
+  grayLight: '#E8ECEF',    // Gris Doux
   textPrimary: '#2B2D42',
-    textSecondary: '#8D99AE',
-    textTertiary: '#EDF2F4',
-
+  textSecondary: '#8D99AE',
+  textTertiary: '#EDF2F4',
+  textLogoDark: '#0B132B',     // Bleu Nuit Profond
+   background: '#FBFBFD',   // Blanc Albâtre / Nacre
     primaryButton:'#0F2C59',
     secondaryButton:'#5c4e65',
     tertaireButton:'#8D99AE',
-    
+    grayText: '#6C7A89',     // Gris Texte
+    primary: '#0F2C59',      // Bleu Saphir / Royal
 
 };
 
